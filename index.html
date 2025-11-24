@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindEase - Student Mental Health Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>MindEase</h1>
+  <p>Anonymous, affordable support for NEET, JEE & college students.</p>
+</header>
+
+<nav>
+  <button onclick="showScreen('home')">Home</button>
+  <button onclick="showScreen('mood')">Mood Check</button>
+  <button onclick="showScreen('issues')">Issues</button>
+  <button onclick="showScreen('about')">About</button>
+</nav>
+
+<section id="home" class="screen active">
+  <h2>Because students deserve help without judgement.</h2>
+  <button onclick="showScreen('mood')">Start Mood Check</button>
+</section>
+
+<section id="mood" class="screen">
+  <h2>How are you feeling?</h2>
+  <button onclick="selectMood('Good')">🙂 Good</button>
+  <button onclick="selectMood('Stressed')">😕 Stressed</button>
+  <button onclick="selectMood('Overwhelmed')">😣 Overwhelmed</button>
+</section>
+
+<section id="issues" class="screen">
+  <h2>What are you struggling with?</h2>
+  <button onclick="selectIssue('Exam pressure')">Exam pressure</button>
+  <button onclick="selectIssue('Parental expectations')">Parental expectations</button>
+  <button onclick="selectIssue('Anxiety')">Anxiety</button>
+</section>
+
+<section id="about" class="screen">
+  <h2>About MindEase</h2>
+  <p>A student-first mental health platform for exam pressure, burnout, and loneliness.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
